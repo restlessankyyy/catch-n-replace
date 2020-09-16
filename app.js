@@ -29,7 +29,7 @@ app.post("/", function(req, res){
     //if (rsp === true){
       //  result 
       let userInput = phrase;
-      let result = userInput.replace(/Google|Amazon|Deloitte|Oracle/g, '$&©');
+      let result = userInput.replace(/Google|Amazon|Deloitte|Microsoft|Oracle/g, '$&©');
       console.log(result);
 
 
