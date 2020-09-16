@@ -16,7 +16,7 @@ app.post("/", function(req, res){
     // input from the body element 
     let phrase = String(req.body.phrase);
     let userInput = phrase;
-   //using regex to search for specific words and replacing with ©
+   //using regex replace method to search for specific words and replacing with ©
     let result = userInput.replace(/Google|Amazon|Deloitte|Microsoft|Oracle/g, '$&©');
     console.log(result);
 //posting result to server the response
