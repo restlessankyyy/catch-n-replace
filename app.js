@@ -1,40 +1,25 @@
+//importing express and definition
 const express = require("express");
-
+//body-parser to parse html content from text box 
 const bodyParser = require("body-parser");
 
 const app = express();
 
-
 app.use(bodyParser.urlencoded({extended: true}));
+
 app.get("/", function(req, res){
    res.sendFile(__dirname + "/index.html");
 });
 app.post("/", function(req, res){
     console.log(req.body.phrase);
     
-    
+    // input from the body element 
     let phrase = String(req.body.phrase);
-   // let regexArray = (/Google/, /Microsoft/, /Amazon/, /Facebook/, /Deloitte/ );
-
-    //let regexC = /Cloud/i;
-    //let regex1 = /Google/i;
-    //let regex2 = /Microsoft/;
-    //let regex3 = /Amazon/;
-    //let regex4 = /Facebook/;
-    //let regex5 = /Deloitte/;
-      //let rsp = regex1.test(phrase);
-    //if regexex1.test(phrase)) === true){
-
-
-    //if (rsp === true){
-      //  result 
-      let userInput = phrase;
-      let result = userInput.replace(/Google|Amazon|Deloitte|Microsoft|Oracle/g, '$&©');
-      console.log(result);
-
-
-    //let result = phrase.replace(/Google|Microsoft|Deloitte|Amazon|Oracle|/g, '$&©');
-    //console.log(result);
+    let userInput = phrase;
+   //using regex to search for specific words and replacing with ©
+    let result = userInput.replace(/Google|Amazon|Deloitte|Microsoft|Oracle/g, '$&©');
+    console.log(result);
+//posting result to server the response
     res.send(result);
 
 });
