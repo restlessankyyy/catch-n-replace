@@ -6,3 +6,5 @@ Steps to run:
 --> Enter the input text 
 “We really like the new security features of Google Cloud.
 
+--> Hit on Click to see the result button
+
