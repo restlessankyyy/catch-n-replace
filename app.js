@@ -22,7 +22,7 @@ app.post("/", function(req, res){
     //let regex3 = /Amazon/;
     //let regex4 = /Facebook/;
     //let regex5 = /Deloitte/;
-      //let rsp = regex1.test(phrase);
+      let rsp = regexC.test(phrase);
     //if regexex1.test(phrase)) === true){
 
 
