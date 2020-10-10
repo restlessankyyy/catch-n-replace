@@ -8,9 +8,9 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
+#Install express and body-parser using npm
 RUN npm install express && npm install body-parser
-# If you are building your code for production
-# RUN npm ci --only=production
+
 
 # Bundle app source
 COPY . .
