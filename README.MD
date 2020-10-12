@@ -93,7 +93,7 @@ Note: You can also create this cluster through the Console by opening the Naviga
 A Kubernetes pod is a group of containers tied together for administration and networking purposes. It can contain single or multiple containers. Here you'll use one container built with your Node.js image stored in your private container registry. It will serve content on port 3211.
 
 Create a pod with the kubectl run command (replace PROJECT_ID with your Project ID, found in the console):
----------------------------------------------------------------------------------------------------------
+
 kubectl create deployment catch-n-replace \
     --image=gcr.io/PROJECT_ID/catch-n-replace:v1
 
@@ -135,7 +135,7 @@ kubectl config view
 ------------------------------
 
 And for troubleshooting :
----------------------
+
 kubectl get events
 ---------------------
 
