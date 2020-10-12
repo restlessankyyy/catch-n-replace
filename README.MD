@@ -66,7 +66,7 @@ Make sure you have set your project using gcloud (replace PROJECT_ID with your P
 gcloud config set project PROJECT_ID 
 
 Create a cluster with two n1-standard-1 nodes (this will take a few minutes to complete):
----------------------------------------------------------------------------------------------------------
+
 gcloud container clusters create catch-n-replace \
                 --num-nodes 2 \
                 --machine-type n1-standard-1 \
