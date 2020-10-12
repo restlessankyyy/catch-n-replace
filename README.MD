@@ -77,12 +77,13 @@ You can safely ignore warnings that come up when the cluster builds.
 
 The console output should look like this:
 
-Creating cluster hello-world...done.
+Creating cluster catch-n-replace done.
+<br/>
 Created [https://container.googleapis.com/v1/projects/PROJECT_ID/zones/us-central1-a/clusters/catch-n-replace].
 kubeconfig entry generated for catch-n-replace.
 NAME         ZONE           MASTER_VERSION  MASTER_IP       MACHINE_TYPE   STATUS
 catch-n-replace us-central1-a  1.5.7           146.148.46.124  n1-standard-1  RUNNING
----------------------------------------------------------------------------------------------------------
+
 
 
 Note: You can also create this cluster through the Console by opening the Navigation menu and selecting Kubernetes Engine > Kubernetes clusters > Create cluster
