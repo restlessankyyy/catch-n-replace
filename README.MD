@@ -111,7 +111,7 @@ kubectl get deployments
 (Output)
 NAME         READY   UP-TO-DATE   AVAILABLE   AGE
 catch-n-replace   1/1     1            1           1m36s
----------------------------------------------------------------------------------------------------------
+
 To view the pod created by the deployment, run:
 ---------------------------------------------------------------------------------------------------------
 kubectl get pods
@@ -122,7 +122,7 @@ kubectl get pods
 NAME                         READY     STATUS    RESTARTS   AGE 
 <br/>
 catch-n-replace-714049816-ztzrb   1/1       Running   0          6m
----------------------------------------------------------------------------------------------------------
+  
 
 <br/>
 Now is a good time to go through some interesting kubectl commands. None of these will change the state of the cluster, full documentation is available here: https://cloud.google.com/container-engine/docs/kubectl/
