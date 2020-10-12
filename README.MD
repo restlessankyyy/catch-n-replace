@@ -17,7 +17,7 @@ A. On localhost
 1. Clone the repository and head to the root directory of the folder
 ---------------------------------------------------------------------------------------------------------
 cd /catch-n-replace/
----------------------------------------------------------------------------------------------------------
+
 2. Install Nodemon or run node app.js on the terminal and head to the browser http://localhost:3211
 
 B. On Container using Docker.
@@ -29,7 +29,7 @@ docker build -t <docker-image name>:<with tag> <location of the Dockerfile>
 in this case 
 ---------------------------------------------------------------------------------------------------------
 docker build -t catch-n-replace:latest . (. specifies current location)
----------------------------------------------------------------------------------------------------------
+
 ### Deploying the app
 
 A. On a VM (Ubuntu or Centos)
@@ -45,7 +45,7 @@ Login to GCP cloud shell and start executing the below commands
 
 ---------------------------------------------------------------------------------------------------------
 git clone https://github.com/restlessankyyy/catch-n-replace.git and head to the root directory of the project.
----------------------------------------------------------------------------------------------------------
+
 
 #### Pushing the container image into Google Container Registry
 
@@ -125,7 +125,7 @@ catch-n-replace-714049816-ztzrb   1/1       Running   0          6m
 
 <br/>
 Now is a good time to go through some interesting kubectl commands. None of these will change the state of the cluster, full documentation is available here: https://cloud.google.com/container-engine/docs/kubectl/
----------------------------------------------------------------------------------------------------------
+
 ------------------------------
 kubectl cluster-info
 ------------------------------
@@ -148,7 +148,7 @@ You now need to make your pod accessible to the outside world.
 By default, the pod is only accessible by its internal IP within the cluster. In order to make the catch-n-replace container accessible from outside the Kubernetes virtual network, you have to expose the pod as a Kubernetes service.
 
 From Cloud Shell you can expose the pod to the public internet with the kubectl expose command combined with the --type="LoadBalancer" flag. This flag is required for the creation of an externally accessible IP:
--------------------------------------------------------------------------------------------------------
+
 kubectl expose deployment catch-n-replace --type="LoadBalancer" --port=3211
 
 (Output)
@@ -160,7 +160,6 @@ The flag used in this command specifies that are using the load-balancer provide
 The Kubernetes master creates the load balancer and related Compute Engine forwarding rules, target pools, and firewall rules to make the service fully accessible from outside of Google Cloud.
 
 To find the publicly-accessible IP address of the service, request kubectl to list all the cluster services:
----------------------------------------------------------------------------------------------------------
 kubectl get services
 
 This is the output you should see:
@@ -184,7 +183,7 @@ At this point you've gained several features from moving to containers and Kuber
 #### Scale up your service
 
 One of the powerful features offered by Kubernetes is how easy it is to scale your application. Suppose you suddenly need more capacity. You can tell the replication controller to manage a new number of replicas for your pod:
--------------------------------------------------------------------------------------------------------
+
 kubectl scale deployment catch-n-replace --replicas=4
 
 (Output)
