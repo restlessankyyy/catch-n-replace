@@ -5,7 +5,7 @@
 
 🌱 All Set, let's Go .... 👯
 
-### Prequisites
+### Prerequisite
 
 1. Exposure to ExpressJS, NodeJS and Javascript Concepts
 2. Node 12 or above
