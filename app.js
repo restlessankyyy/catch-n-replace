@@ -25,6 +25,6 @@ app.post("/", function(req, res){
 });
 
 
-app.listen(3211, function(){
+app.listen(process.env.PORT || 3211, function(){
     console.log("Serving on 3211");
 });
