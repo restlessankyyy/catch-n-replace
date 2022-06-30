@@ -4,9 +4,7 @@
   "description": "catch and replace strings",
   "main": "app.js",
   "scripts": {
-    "start": "npm install",
-    "build": "node app.js"
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
