@@ -159,7 +159,8 @@ NAME         CLUSTER-IP     EXTERNAL-IP      PORT(S)    AGE
 catch-n-replace   10.3.250.149   104.154.90.147   3211/TCP   1m
 <br/>
 kubernetes   10.3.240.1     <none>           443/TCP    5m
----------------------------------------------------------------------------------------------------------
+
+ 
 There are 2 IP addresses listed for your catch-n-replace service, both serving port 3211. The CLUSTER-IP is the internal IP that is only visible inside your cloud virtual network; the EXTERNAL-IP is the external load-balanced IP.
 
 Note: The EXTERNAL-IP may take several minutes to become available and visible. If the EXTERNAL-IP is missing, wait a few minutes and run the command again.
